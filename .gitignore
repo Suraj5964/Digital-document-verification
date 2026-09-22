@@ -1,0 +1,7 @@
+target/
+node_modules/
+frontend/dist/
+uploads/*.pdf
+.idea/
+.vscode/
+*.log

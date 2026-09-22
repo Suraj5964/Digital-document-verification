@@ -1,0 +1,13 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: document-verification-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: document_verification
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+volumes:
+  mysql_data:
